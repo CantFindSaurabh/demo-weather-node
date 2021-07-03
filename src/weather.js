@@ -1,5 +1,6 @@
 const fetch= require('node-fetch');
 
+
 const getWeather = async (address) => {
 
     const location = await getLocation(address);
