@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="/style/index.css">
+    </head>
+    <body>
+        {{>header}}
+        <h2>{{title}}</h2>
+        <form onsubmit="getWeather(event)">
+        <input id="inputLocation" type="text" placeholder="eg:Philadelphia"  required/>
+        <br>
+        <input type="submit" value="Search">
+        </form>
+        <p id="output-text"></p>
+        {{>footer}}
+        <script src="/js/index.js"></script>
+    </body>
+</html>
