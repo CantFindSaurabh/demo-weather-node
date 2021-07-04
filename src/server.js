@@ -6,6 +6,7 @@ const hbs = require('hbs');
 const getWeather = require('./weather');
 
 const app = express();
+const port = process.env.PORT || 4000;
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, "../templates/views"));
