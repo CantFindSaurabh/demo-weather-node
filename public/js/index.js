@@ -5,7 +5,7 @@ const getWeather = async (e) => {
     try {
 
         const value = input.value;
-        const response = await fetch('http://localhost:4000/weather?address=' + encodeURIComponent(value));
+        const response = await fetch('/weather?address=' + encodeURIComponent(value));
         if (!response.ok) {
             throw new Error('Server not working');
         }
