@@ -44,15 +44,15 @@ app.get('/weather', async (req, res) => {
 app.get('/help', (req, res) => {
     res.render('general', {
         title: "Help",
-        message: "Hello Help",
+        text:"lorem ipsum dolor sit amet, consectetur adipis",
         author: "Saurabh"
     });
 })
 app.get('/about', (req, res) => {
     res.render('general', {
         title: "About",
-        message: "Hello About",
-        author: "Saurabh"
+        author: "Saurabh",
+        text:"This site was created by Saurabh . Its uses the mapbox api."
     });
 })
 app.get("*", (req, res) => {
