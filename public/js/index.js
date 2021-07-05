@@ -14,7 +14,6 @@ const getWeather = async (e) => {
             throw new Error(data.error);
         }
         output.innerText=`Currently it is ${data.forecast.temp_c} and it is ${data.forecast.condition.text} in ${data.location}`;
-        console.log(data);
     } catch (e) {
         output.innerText=e.message
     }
